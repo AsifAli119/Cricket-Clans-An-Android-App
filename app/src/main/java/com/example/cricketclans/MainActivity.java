@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button regs = findViewById(R.id.regs);
-        regs.setOnClickListener(new View.OnClickListener() {
+        Button con = findViewById(R.id.con);
+        con.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Register.class);
                 startActivity(intent);
             }
         });

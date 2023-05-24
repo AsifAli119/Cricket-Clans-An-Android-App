@@ -10,27 +10,28 @@
         android:id="@+id/textView2"
         android:layout_width="184dp"
         android:layout_height="50dp"
+        android:layout_marginTop="160dp"
         android:gravity="center"
         android:text="SIGN IN"
         android:textColor="#020101"
         android:textSize="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741">
+        app:layout_constraintVertical_bias="0.093">
 
     </TextView>
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:background="#23D57C16"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="10dp"
-        android:hint="Username"
+        android:hint="Email"
         android:paddingStart="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +65,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
@@ -89,55 +90,31 @@
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ProgressBar
+        android:id="@+id/SHOW_PROGRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
     <TextView
-        android:layout_width="139dp"
-        android:layout_height="54dp"
+        android:id="@+id/textView4"
+        android:layout_width="241dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="136dp"
         android:gravity="center"
-        android:text="Sign in with"
+        android:text="Doesn't Have an account create one!"
         android:textColor="#DD9A10"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/socialicons"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.956">
+        app:layout_constraintVertical_bias="0.031">
 
     </TextView>
 
-    <LinearLayout
-        android:id="@+id/socialicons"
-        android:layout_width="288dp"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975">
 
-        <ImageView
-            android:id="@+id/google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="6sp"
-            app:srcCompat="@drawable/google" />
-
-        <ImageView
-            android:id="@+id/fb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="6sp"
-            app:srcCompat="@drawable/fb" />
-
-        <ImageView
-            android:id="@+id/twi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="6sp"
-            app:srcCompat="@drawable/twiter" />
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

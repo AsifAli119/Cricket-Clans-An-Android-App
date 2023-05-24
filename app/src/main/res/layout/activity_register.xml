@@ -10,21 +10,22 @@
         android:id="@+id/textView2"
         android:layout_width="184dp"
         android:layout_height="50dp"
+        android:layout_marginTop="168dp"
         android:gravity="center"
         android:text="SIGN UP"
         android:textColor="#020101"
         android:textSize="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741">
+        app:layout_constraintVertical_bias="0.214">
 
     </TextView>
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:background="#23D57C16"
@@ -63,25 +64,6 @@
 
     </EditText>
 
-    <EditText
-        android:id="@+id/password2"
-        android:layout_width="250dp"
-        android:layout_height="48dp"
-        android:background="#23D57C16"
-        android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
-        android:drawablePadding="10dp"
-        android:hint="Confirm Password"
-        android:paddingStart="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638"
-        tools:ignore="HardcodedText">
-
-    </EditText>
-
     <Button
         android:id="@+id/regs"
         android:layout_width="wrap_content"
@@ -95,6 +77,15 @@
         app:layout_constraintVertical_bias="0.369">
 
     </Button>
+
+    <ProgressBar
+        android:id="@+id/SHOW_PROGRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/regs"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/already"
